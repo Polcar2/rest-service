@@ -1,0 +1,10 @@
+ru\services\rest\repository\ProjectRepository$ProjectListMeta.class
+ru\services\APIProducer.class
+ru\services\rest\model\Project.class
+ru\services\rest\repository\ProjectRepository$ProjectListLinks.class
+ru\services\App.class
+ru\services\rest\model\User.class
+ru\services\rest\repository\ProjectRepository$ProjectList.class
+ru\services\JerseyApplication.class
+ru\services\rest\repository\ProjectRepository.class
+ru\services\rest\repository\ProjectRepositoryImpl.class
