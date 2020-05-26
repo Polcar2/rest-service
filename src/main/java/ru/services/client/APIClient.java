@@ -15,7 +15,7 @@ import java.util.List;
 @Named("Client")
 public class APIClient {
 
-    private final String url = "http://localhost:8080/rest-service/rest-jax";
+    private final String url = "http://localhost:7001/rest-service/rest-jax/";
 
     public void getObject() {
 

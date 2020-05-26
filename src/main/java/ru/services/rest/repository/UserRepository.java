@@ -3,6 +3,7 @@ package ru.services.rest.repository;
 import io.crnk.core.queryspec.QuerySpec;
 import io.crnk.core.repository.ResourceRepositoryBase;
 import io.crnk.core.resource.list.ResourceList;
+import ru.services.rest.model.TestClass;
 import ru.services.rest.model.User;
 
 import java.util.*;
@@ -17,9 +18,23 @@ public class UserRepository extends ResourceRepositoryBase<User, String> {
         interestsObj.add("coding");
         interestsObj.add("art");
         Optional<List<String>> interests = Optional.of(interestsObj);
-        save(new User(UUID.randomUUID().toString(), "grogdj@gmail.com", "grogdj", "grogj", "dj", interests));
-        save(new User(UUID.randomUUID().toString(), "bot@gmail.com", "bot", "bot", "harry", interests));
-        save(new User(UUID.randomUUID().toString(), "evilbot@gmail.com", "evilbot", "bot", "john", interests));
+        TestClass other = new TestClass();
+        other.setStroka1("Прочее строка 1");
+        other.setStroka2("Прочее строка 2");
+        other.setStroka3("Прочее строка 3");
+
+        List<String> test = new ArrayList<>();
+        test.add("item1");
+        test.add("item2");
+        test.add("item3");
+        test.add("item4");
+        test.add("item5");
+
+        other.setStroki(test);
+
+        save(new User(UUID.randomUUID().toString(), "grogdj@gmail.com", "grogdj", "grogj", "dj", interests, other));
+        save(new User(UUID.randomUUID().toString(), "bot@gmail.com", "bot", "bot", "harry", interests, other));
+        save(new User(UUID.randomUUID().toString(), "evilbot@gmail.com", "evilbot", "bot", "john", interests, other));
     }
 
     @Override
