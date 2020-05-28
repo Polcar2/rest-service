@@ -1,12 +1,16 @@
 package ru.services.rest.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import io.crnk.core.resource.annotations.JsonApiId;
 import io.crnk.core.resource.annotations.JsonApiResource;
+import io.crnk.client.http.apache.HttpClientAdapter;
 
 import java.util.List;
 import java.util.Optional;
 
-@JsonApiResource(type = "users")
+@JsonApiResource(type = "users",
+        postable = true, readable = true, patchable = true, deletable = true, sortable = true, filterable = true)
 public class User {
 
     @JsonApiId

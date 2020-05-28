@@ -4,6 +4,7 @@ import io.crnk.home.HomeModule;
 import io.crnk.data.jpa.JpaModule;
 import io.crnk.data.jpa.JpaModuleConfig;
 import ru.services.rest.repository.UserRepository;
+import io.crnk.client.http.apache.HttpClientAdapter;
 
 
 import javax.enterprise.context.ApplicationScoped;

@@ -4,9 +4,12 @@ import io.crnk.core.queryspec.QuerySpec;
 import io.crnk.core.repository.ResourceRepositoryBase;
 import io.crnk.core.resource.list.ResourceList;
 import ru.services.rest.model.User;
+import io.crnk.client.http.apache.HttpClientAdapter;
 
+import javax.enterprise.context.ApplicationScoped;
 import java.util.*;
 
+//@ApplicationScoped
 public class UserRepository extends ResourceRepositoryBase<User, String> {
 
     private Map<String, User> users = new HashMap<>();
