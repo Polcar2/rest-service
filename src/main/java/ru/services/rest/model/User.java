@@ -7,6 +7,7 @@ import io.crnk.core.resource.annotations.JsonApiResource;
 import io.crnk.client.http.apache.HttpClientAdapter;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @JsonApiResource(type = "users",
@@ -26,20 +27,21 @@ public class User {
 
     private Optional<List<String>> interests;
 
+    private TestClass other;
+
+
+
     public User() {
     }
 
-    public User(String id, String email, String nickname, String firstName, String lastName, Optional<List<String>> interests) {
+    public User(String id, String email, String nickname, String firstName, String lastName, Optional<List<String>> interests, TestClass other) {
         this.id = id;
         this.email = email;
         this.nickname = nickname;
         this.firstName = firstName;
         this.lastName = lastName;
         this.interests = interests;
-    }
-
-    public User(String email) {
-        this.email = email;
+        this.other = other;
     }
 
     public String getId() {
@@ -90,19 +92,43 @@ public class User {
         this.interests = interests;
     }
 
+    public TestClass getOther() {
+        return other;
+    }
+
+    public void setOther(TestClass other) {
+        this.other = other;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         User user = (User) o;
-
-        return !(id != null ? !id.equals(user.id) : user.id != null);
-
+        return Objects.equals(id, user.id) &&
+                Objects.equals(email, user.email) &&
+                Objects.equals(nickname, user.nickname) &&
+                Objects.equals(firstName, user.firstName) &&
+                Objects.equals(lastName, user.lastName) &&
+                Objects.equals(interests, user.interests) &&
+                Objects.equals(other, user.other);
     }
 
     @Override
     public int hashCode() {
-        return id != null ? id.hashCode() : 0;
+        return Objects.hash(id, email, nickname, firstName, lastName, interests, other);
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", email='" + email + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", interests=" + interests +
+                ", other=" + other +
+                '}';
     }
 }

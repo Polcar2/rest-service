@@ -24,7 +24,7 @@ import java.util.UUID;
 @SessionScoped
 public class APIClient implements Serializable {
 
-    private final String url = "http://localhost:8080/rest-service/rest-jax";
+    private final String url = "http://localhost:7001/rest-service/rest-jax/";
 
     public void run() {
 

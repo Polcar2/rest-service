@@ -1,5 +1,9 @@
 ru\services\rest\repository\UserRepository.class
 ru\services\rest\repository\ProjectRepository$ProjectListMeta.class
+<<<<<<< HEAD
+=======
+ru\services\rest\model\TestClass.class
+>>>>>>> 11db47c1ae8a861a051d89e27d25c08de3bd996e
 ru\services\APIApplication.class
 ru\services\rest\repository\ProjectRepository.class
 ru\services\rest\repository\ProjectRepositoryImpl.class

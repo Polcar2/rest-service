@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\Others\Job\Projects\rest-service\src\main\java\ru\services\rest\repository\ProjectRepositoryImpl.java
 D:\Others\Job\Projects\rest-service\src\main\java\ru\services\rest\repository\UserRepository.java
 D:\Others\Job\Projects\rest-service\src\main\java\ru\services\APIProducer.java
@@ -6,3 +7,14 @@ D:\Others\Job\Projects\rest-service\src\main\java\ru\services\rest\repository\Pr
 D:\Others\Job\Projects\rest-service\src\main\java\ru\services\rest\model\User.java
 D:\Others\Job\Projects\rest-service\src\main\java\ru\services\APIApplication.java
 D:\Others\Job\Projects\rest-service\src\main\java\ru\services\client\APIClient.java
+=======
+E:\ANT\yDisk\YandexDisk\ANT\Web\rest-service\src\main\java\ru\services\rest\model\TestClass.java
+E:\ANT\yDisk\YandexDisk\ANT\Web\rest-service\src\main\java\ru\services\rest\repository\ProjectRepositoryImpl.java
+E:\ANT\yDisk\YandexDisk\ANT\Web\rest-service\src\main\java\ru\services\APIApplication.java
+E:\ANT\yDisk\YandexDisk\ANT\Web\rest-service\src\main\java\ru\services\client\APIClient.java
+E:\ANT\yDisk\YandexDisk\ANT\Web\rest-service\src\main\java\ru\services\rest\repository\ProjectRepository.java
+E:\ANT\yDisk\YandexDisk\ANT\Web\rest-service\src\main\java\ru\services\rest\model\Project.java
+E:\ANT\yDisk\YandexDisk\ANT\Web\rest-service\src\main\java\ru\services\rest\repository\UserRepository.java
+E:\ANT\yDisk\YandexDisk\ANT\Web\rest-service\src\main\java\ru\services\rest\model\User.java
+E:\ANT\yDisk\YandexDisk\ANT\Web\rest-service\src\main\java\ru\services\APIProducer.java
+>>>>>>> 11db47c1ae8a861a051d89e27d25c08de3bd996e
